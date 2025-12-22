@@ -1,3 +1,4 @@
+import javax.lang.model.element.Element;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -91,5 +92,37 @@ class LinkedListMethodImpl implements LinkedListMethods{
         }
         temp.next = null;
         return HeadNode;
+    }
+
+    @Override
+    public void searchElement(Node HeadNode, int element) {
+        int i = 1;
+        boolean flag = false;
+        while(HeadNode.next != null){
+            if(HeadNode.data == element){
+                System.out.println("Element found at: "+i);
+                flag = true;
+            }
+
+            HeadNode = HeadNode.next;
+            i++;
+        }
+        if (flag == false){
+            System.out.println("Element not found");
+        }
+
+    }
+
+    @Override
+    public void modifyElementAtPos(Node HeadNode, int pos, int element) {
+        for(int i = 1; i<pos && HeadNode.next != null; i++){
+            HeadNode = HeadNode.next;
+        }
+        HeadNode.data = element;
+    }
+
+    @Override
+    public void reverseList(Node HeadNode) {
+        
     }
 }

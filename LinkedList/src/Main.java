@@ -54,5 +54,16 @@ public class Main {
         System.out.println("***************************************\nafter deleting from the start");
 
         impl.printLinkedList(node4);
+
+        System.out.println();
+        System.out.println("***************************************");
+
+        impl.searchElement(node4, 1);
+
+        impl.modifyElementAtPos(node4, 2, 21);
+        System.out.println();
+        System.out.println("***************************************\nupdating the linkedList");
+
+        impl.printLinkedList(node4);
     }
 }

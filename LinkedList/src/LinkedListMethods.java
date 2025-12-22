@@ -7,4 +7,7 @@ public interface LinkedListMethods {
     public void deleteFromPos(Node HeadNode, int pos);
     public Node deleteFromTheStart(Node HeadNode);
     public Node deleteFromTheLast(Node HeadNode);
+    public void searchElement(Node HeadNode, int element);
+    public void modifyElementAtPos(Node HeadNode, int pos, int element);
+    public void reverseList(Node HeadNode);
 }
