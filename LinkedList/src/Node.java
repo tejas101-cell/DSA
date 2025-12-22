@@ -64,4 +64,32 @@ class LinkedListMethodImpl implements LinkedListMethods{
 
         node.next = temp;
     }
+
+    @Override
+    public void deleteFromPos(Node HeadNode, int pos) {
+        Node temp = HeadNode;
+        for (int i = 1; i<pos-1 && HeadNode.next != null; i++){
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+    }
+
+    @Override
+    public Node deleteFromTheStart(Node HeadNode) {
+        if(HeadNode == null){
+            System.out.println("LinkedList is Empty");
+        }
+        HeadNode = HeadNode.next;
+        return HeadNode;
+    }
+
+    @Override
+    public Node deleteFromTheLast(Node HeadNode) {
+        Node temp = HeadNode;
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+        temp.next = null;
+        return HeadNode;
+    }
 }

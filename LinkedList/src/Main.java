@@ -35,5 +35,24 @@ public class Main {
         System.out.println("***************************************\nafter adding at respective position");
 
         impl.printLinkedList(node4);
+
+        // node4 has became the new root
+        impl.deleteFromPos(node4, 3);
+        System.out.println();
+        System.out.println("***************************************\nafter deleting from respective position");
+
+        impl.printLinkedList(node4);
+
+        node4 = impl.deleteFromTheStart(node4);
+        System.out.println();
+        System.out.println("***************************************\nafter deleting from the start");
+
+        impl.printLinkedList(node4);
+
+        node4 = impl.deleteFromTheLast(node4);
+        System.out.println();
+        System.out.println("***************************************\nafter deleting from the start");
+
+        impl.printLinkedList(node4);
     }
 }
