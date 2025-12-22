@@ -1,3 +1,5 @@
+package LinkedList;
+
 public interface LinkedListMethods {
     public Node addnode(Node parent, Node child);
     public void printLinkedList(Node rootNode);

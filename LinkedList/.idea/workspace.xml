@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774d1be-c545-4e96-a1b9-eec217036af4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DoublyLinkedList/DoublyLinkedListMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyLinkedList/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyLinkedList/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedListMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedListMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedListMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedListMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -45,16 +49,30 @@
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList.Main" />
       <module name="LinkedList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoublyLinkedList.main" />
+      <module name="LinkedList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DoublyLinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

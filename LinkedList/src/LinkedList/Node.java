@@ -1,6 +1,4 @@
-import javax.lang.model.element.Element;
-import java.util.ArrayList;
-import java.util.List;
+package LinkedList;
 
 public class Node {
     int data;
@@ -123,6 +121,6 @@ class LinkedListMethodImpl implements LinkedListMethods{
 
     @Override
     public void reverseList(Node HeadNode) {
-        
+
     }
 }
