@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Node {
+    int data;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+class LinkedListMethodImpl implements LinkedListMethods{
+
+
+    @Override
+    public Node addnode(Node parent, Node child) {
+        if(parent == null){
+            System.out.println("root node");
+        }
+        else {
+            parent.next = child;
+        }
+        return child;
+    }
+
+    @Override
+    public void printLinkedList(Node rootNode) {
+        while (rootNode != null){
+            System.out.print("->"+rootNode.data);
+            rootNode = rootNode.next;
+        }
+    }
+
+    @Override
+    public Node insertAtFront(Node HeadNode, int x) {
+        Node node = new Node(x);
+        node.next = HeadNode;
+        return node;
+    }
+
+    @Override
+    public void insertAtEnd(Node HeadNode, int x) {
+
+        while(HeadNode.next != null){
+            HeadNode = HeadNode.next;
+        }
+        // headNode is at end now
+
+        // create a new node to add at the end
+        Node node = new Node(x);
+        HeadNode.next = node;
+    }
+    // linkedList position starts from the 1
+    @Override
+    public void insertAtPos(Node HeadNode, int pos, int x) {
+        for(int i = 1; i<pos-1 && HeadNode.next != null ;i++){
+            HeadNode = HeadNode.next;
+        }
+        Node temp = HeadNode.next;
+        // headnode will come at the desired position
+        Node node = new Node(x);
+        HeadNode.next = node;
+
+        node.next = temp;
+    }
+}

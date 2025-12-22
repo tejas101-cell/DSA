@@ -1,0 +1,7 @@
+public interface LinkedListMethods {
+    public Node addnode(Node parent, Node child);
+    public void printLinkedList(Node rootNode);
+    public Node insertAtFront(Node node, int x);
+    public void insertAtEnd(Node HeadNode, int x);
+    public void insertAtPos(Node HeadNode, int pos, int x);
+}

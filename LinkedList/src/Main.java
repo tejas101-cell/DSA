@@ -2,14 +2,38 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // parent
+        Node node = new Node(11);
+        LinkedListMethodImpl impl = new LinkedListMethodImpl();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Node node1 = impl.addnode(node, new Node(12));
+        Node node2 = impl.addnode(node1, new Node(13));
+        Node node3 = impl.addnode(node2, new Node(14));
+
+        System.out.println(node3.next);
+
+        // passing rootnode of perticular linkedList
+        impl.printLinkedList(node);
+        System.out.println();
+        System.out.println("****************************************\nafter adding");
+        // two arguments giving head node/ root node and data for the node to be added
+        // retrning a node which can be used to print the new list
+        Node node4 = impl.insertAtFront(node, 16);
+
+        impl.printLinkedList(node4);
+
+        impl.insertAtEnd(node, 17);
+
+        System.out.println();
+        System.out.println("***************************************\nafter adding at end");
+
+        impl.printLinkedList(node4);
+
+        // index starting from the 1
+        impl.insertAtPos(node4, 3, 10);
+        System.out.println();
+        System.out.println("***************************************\nafter adding at respective position");
+
+        impl.printLinkedList(node4);
     }
 }
