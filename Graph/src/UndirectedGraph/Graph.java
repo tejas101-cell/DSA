@@ -1,6 +1,7 @@
+package UndirectedGraph;
+
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 // implementation from the gfg
 public class Graph {
