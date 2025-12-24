@@ -20,7 +20,7 @@ public class main {
         deque.deleteRear();
         deque.deleteRear();
         deque.deleteRear();
-        
+
         deque.printDeque();
 
 
