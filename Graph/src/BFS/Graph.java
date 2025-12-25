@@ -46,38 +46,31 @@ public class Graph {
     }
     // implementing the bfs algorithm
     public ArrayList<Integer> bfs (ArrayList<ArrayList<Integer>> mat){
-        int V = mat.size();
-        // System.out.println(V);
-        boolean[]visited = new boolean[V];
-
+        // creating the list to store vertices while traversing
         ArrayList<Integer> res = new ArrayList<>();
 
-        // giving a source
+        // by default all are false
+        boolean [] visited  = new boolean[mat.size()];
+
+        // queue which is used to traverse
+        Queue <Integer> queue = new LinkedList<>();
+
+        // initialize the que with source
         int src = 0;
-
-        // we are making queue to store all the elements while traversing
-        Queue<Integer> q = new LinkedList<>();
-
-        // initializint the boolean array with first source node
-        // giving true to it
+        queue.add(src);
         visited[src] = true;
 
-        q.add(src);
+        // same above process you are gonna do it in the loop
 
-        // checking if q is empty or not
-        // but we have already initialized it
-        while (!q.isEmpty()){
-            // giving us the top element
-            // it removes the element fron the queue
-            int curr = q.poll();
-
-            // add it into the res
+        while (!queue.isEmpty()){
+            int curr = queue.poll();
             res.add(curr);
 
-            for (int x : mat.get(curr)){
-                if(!visited[x]){
-                    visited[x] = true;
-                    q.add(x);
+            // going into the
+            for (int vertex : mat.get(curr)){
+                if (!visited[vertex]){
+                    visited[vertex] = true;
+                    queue.add(vertex);
                 }
             }
         }
