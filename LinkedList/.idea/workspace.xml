@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774d1be-c545-4e96-a1b9-eec217036af4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LinkedListPractice/LinkedMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedListPractice/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedListPractice/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyCircularLinkedListPractice/DoublyCircularLinkedListMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyCircularLinkedListPractice/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyCircularLinkedListPractice/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyLinkedListPractice/DoublyLinkedListMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyLinkedListPractice/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublyLinkedListPractice/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SinglyCircularLinkedListPractice/SinglyCircularLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SinglyCircularLinkedListPractice/SinglyCircularLinkedListMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SinglyCircularLinkedListPractice/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,8 +43,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DoublyCircularLinkedListPractice.main.executor": "Run",
+    "Application.DoublyLinkedListPractice.main.executor": "Run",
     "Application.LinkedListPractice.main.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.SinglyCircularLinkedListPractice.main.executor": "Run",
     "Application.main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -48,7 +58,33 @@
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LinkedListPractice.main">
+  <component name="RunManager" selected="Application.DoublyCircularLinkedListPractice.main">
+    <configuration name="DoublyCircularLinkedListPractice.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoublyCircularLinkedListPractice.main" />
+      <module name="LinkedList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DoublyCircularLinkedListPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DoublyLinkedListPractice.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoublyLinkedListPractice.main" />
+      <module name="LinkedList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DoublyLinkedListPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListPractice.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinkedListPractice.main" />
       <module name="LinkedList" />
@@ -62,9 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.Main" />
+    <configuration name="SinglyCircularLinkedListPractice.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SinglyCircularLinkedListPractice.main" />
       <module name="LinkedList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SinglyCircularLinkedListPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,9 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DoublyCircularLinkedListPractice.main" />
+        <item itemvalue="Application.SinglyCircularLinkedListPractice.main" />
+        <item itemvalue="Application.DoublyLinkedListPractice.main" />
         <item itemvalue="Application.LinkedListPractice.main" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
