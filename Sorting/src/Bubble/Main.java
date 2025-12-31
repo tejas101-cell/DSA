@@ -1,5 +1,8 @@
 package Bubble;
 // complexity : O(n^2)
+// slowly range of the bubble is decreasing
+
+// you prioratize the max value here
 public class Main {
     public static int[] bubbleSort(int[]arr){
         int l = arr.length;
